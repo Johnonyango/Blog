@@ -74,3 +74,34 @@ class Post(db.Model):
         return post
 
 
+class Comment(db.Model):
+    __tablename__ = 'comments'
+
+    id = db.Column(db.Integer,primary_key = True)
+    comment_text = db.Column(db.String)
+    comment_time = db.Column(db.DateTime, default = datetime.utcnow)
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    
+    def save_comment(self):
+        db.session.add(self)
+        db.session.commit()
+
+    @classmethod
+    def get_comments(cls,id):
+        comments = Comment.query.filter_by(post_id = id).all()
+        return  comments
+
+    @classmethod
+    def delete_comment(cls,id):
+        comment = Comment.query.filter_by(id=id).first()
+        db.session.delete(comment)
+        db.session.commit()
+
+
+
+class Subscriber(db.Model):
+    __tablename__ = 'subscribers'
+
+    id = db.Column(db.Integer,primary_key = True)
+    username = db.Column(db.String(255),unique = True)
+    email = db.Column(db.String(255),unique = True,index = True)
