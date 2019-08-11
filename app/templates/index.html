@@ -1,3 +1,5 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro%}{% import "bootstrap/wtf.html" as wtf %}
+
 <!DOCTYPE html>
 
 <html>
@@ -8,9 +10,6 @@
     {% else %}
     <title> !JIGGY JAGAH! </title>
     {% endif %}
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+SC|Pacifico" rel="stylesheet"></head>
-{% extends 'base.html'%} {% import 'macros.html' as macro%}{% import "bootstrap/wtf.html" as wtf %}
 
 <body>
 
@@ -31,10 +30,10 @@
         <nav class="navbar navbar-default" role="navigation" style="text-align:center;">
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <h1 class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <h2 class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                    Choose Blog Category
-            </h1>
+                    Click to Choose Category
+            </h2>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <ul class="nav navbar-nav navbar-right">
                     <li style="padding-right:150px; color:green;"><a href="/product">Health</a></li>
