@@ -1,3 +1,15 @@
 h2 {
     color: green;
 }
+
+.landpage{
+    background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg")
+}
+.panel-footer:hover .overlay {
+    bottom: 0;
+    height: 100%;
+
+}
+body{
+    background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg")
+}

@@ -6,7 +6,7 @@
     <meta charset="utf-8"> {% if title %}
     <title> {{ title }}</title>
     {% else %}
-    <title> BLOG POST </title>
+    <title> !JIGGY JAGAH! </title>
     {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+SC|Pacifico" rel="stylesheet"></head>
@@ -23,20 +23,24 @@
     {% block content %}
 
     <div class="well">
-        <H1 style="font-family:sans-serif;text-align: center;color: blueviolet;"> WELCOME  TO.... BLOG POST!!!!</H1>
+        <H1 style="font-family:sans-serif;text-align: center;color: blueviolet;"> JIGGY JAGAH BLOG SITE</H1>
 
     </div>
     <div class="container" style="background-color:rgb(235,230,160);color:#3A005C">
-        <h3 style="text-align:center">Choose to view or post a blog.</h3>
+        <!-- <h3 style="text-align:center">Choose to view or post a blog.</h3> -->
         <nav class="navbar navbar-default" role="navigation" style="text-align:center;">
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" id="pro">
-                <ul class="nav navbar-nav navbar-right">
-                    <li style="padding-right:150px; color:green;"><a href="/pitch">Education</a></li>
+            <h1 class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Choose Blog Category
+            </h1>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="nav navbar-nav navbar-right">
                     <li style="padding-right:150px; color:green;"><a href="/product">Health</a></li>
-                    <li style="padding-right:150px; color:green"><a href="/interview">Technology</a></li>
+                    <li style="padding-right:150px; color:green;"><a href="/pitch">Education</a></li>
                     <li style="padding-right:150px; color:green"><a href="/promotion">Science</a></li>
+                    <li style="padding-right:150px; color:green"><a href="/interview">Technology</a></li>
 
                 </ul>
             </div>
@@ -45,7 +49,6 @@
 
 
         <div id="category">
-            <h2>Welcome to Blog</h2>
             <a class="btn btn-primary text-center " href="{{url_for('main.new_post')}}"><span ></span> Add Blog Post</a>
             <hr>
           
@@ -61,9 +64,10 @@
                 </div>
                 {% if current_user.is_authenticated %}
                 <div class="panel-footer">
-                  <a class="btn btn-success text-center" href="{{url_for('main.view_post', id=post.id)}}">View Comments</a>
                   <a class="btn btn-warning text-center" href="{{url_for('main.update_post', id=post.id)}}">Update Post</a>
                   <a class="btn btn-danger text-center" href="{{url_for('main.delete_post', id=post.id)}}">Delete Post</a>
+                  <a class="btn btn-success text-center" href="{{url_for('main.view_post', id=post.id)}}">View Comments</a>
+
                 </div>
               
                 {% else %}
