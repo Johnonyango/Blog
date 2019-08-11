@@ -23,7 +23,7 @@
     {% block content %}
 
     <div class="well">
-        <H1 style="font-family:sans-serif;text-align: center;color: blueviolet;"> WELCOME  TO.... BLOG POST!!!!</H1>
+        <H1 style="font-family:sans-serif;text-align: center;color: #808000;"> JIGGY JAGAH BLOGGERS</H1>
 
     </div>
     <div class="container" style="background-color:rgb(235,230,160);color:#3A005C">
@@ -31,7 +31,7 @@
         <nav class="navbar navbar-default" role="navigation" style="text-align:center;">
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" id="pro">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <ul class="nav navbar-nav navbar-right">
                     <li style="padding-right:150px; color:green;"><a href="/pitch">Education</a></li>
                     <li style="padding-right:150px; color:green;"><a href="/product">Health</a></li>
@@ -61,9 +61,10 @@
                 </div>
                 {% if current_user.is_authenticated %}
                 <div class="panel-footer">
-                  <a class="btn btn-success text-center" href="{{url_for('main.view_post', id=post.id)}}">View Comments</a>
                   <a class="btn btn-warning text-center" href="{{url_for('main.update_post', id=post.id)}}">Update Post</a>
                   <a class="btn btn-danger text-center" href="{{url_for('main.delete_post', id=post.id)}}">Delete Post</a>
+                  <a class="btn btn-success text-center" href="{{url_for('main.view_post', id=post.id)}}">View Comments</a>
+
                 </div>
               
                 {% else %}

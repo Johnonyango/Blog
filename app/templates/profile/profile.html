@@ -10,9 +10,9 @@ background: linear-gradient(to right, #232526, #414345); ">
 
     <!--Displaying user bio-->
     {% if user.bio %}
-      <p style="color: whitesmoke"> {{user.bio}}</p>
+      <p style="color: rgb(187, 119, 119)"> {{user.bio}}</p>
     {%else%}
-      <p style="color: white"> {{user.username| capitalize}} has no bio </p>
+      <p style="color: rgb(192, 148, 148)"> {{user.username| capitalize}} has no bio </p>
     {% endif %}
     {% if user == current_user %}
     <a href="{{url_for('main.update_profile',uname=user.username)}}" style="color: green">Edit profile</a>
