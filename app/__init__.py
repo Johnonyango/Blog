@@ -15,8 +15,9 @@ login_manager = LoginManager()
 login_manager.session_protection = 'strong'
 login_manager.login_view = 'auth.login'
 photos= UploadSet('photos',IMAGES)
-mail = Mail()
 simple = SimpleMDE ()
+mail = Mail()
+
 
 def create_app(config_name):
 
