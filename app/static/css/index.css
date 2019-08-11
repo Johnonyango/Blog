@@ -1,5 +1,6 @@
-h2 {
+h1 {
     color: green;
+    font-family: 'Beth Ellen', cursive;
 }
 
 .landpage{
@@ -11,5 +12,6 @@ h2 {
 
 }
 body{
-    background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg")
+    color: green;
 }
+

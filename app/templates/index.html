@@ -16,13 +16,14 @@
         {% block styles%}
         {{ super() }}
         <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+        <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
         {% endblock %}
         
 
     {% block content %}
 
     <div class="well">
-        <H1 style="font-family:sans-serif;text-align: center;color: blueviolet;"> JIGGY JAGAH BLOG SITE</H1>
+        <h1 style="font-family:sans-serif;text-align: center;color: blueviolet;"> JIGGY JAGAH BLOG SITE</h1>
 
     </div>
     <div class="container" style="background-color:rgb(235,230,160);color:#3A005C">
@@ -30,16 +31,17 @@
         <nav class="navbar navbar-default" role="navigation" style="text-align:center;">
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <h2 class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <h2 class="nav-link dropdown-toggle" style="    font-family: 'Beth Ellen', cursive;
+            " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
                     Click to Choose Category
             </h2>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <ul class="nav navbar-nav navbar-right">
-                    <li style="padding-right:150px; color:green;"><a href="/product">Health</a></li>
-                    <li style="padding-right:150px; color:green;"><a href="/pitch">Education</a></li>
-                    <li style="padding-right:150px; color:green"><a href="/promotion">Science</a></li>
-                    <li style="padding-right:150px; color:green"><a href="/interview">Technology</a></li>
+                    <li style="padding-right:150px; color:olive;"><a href="/product">Health</a></li>
+                    <li style="padding-right:150px; color:olive;"><a href="/pitch">Education</a></li>
+                    <li style="padding-right:150px; color:olive"><a href="/promotion">Science</a></li>
+                    <li style="padding-right:150px; color:olive"><a href="/interview">Technology</a></li>
 
                 </ul>
             </div>
@@ -50,8 +52,9 @@
         <div id="category">
             <a class="btn btn-primary text-center " href="{{url_for('main.new_post')}}"><span ></span> Add Blog Post</a>
             <hr>
-          
-            <h3> Posts Available:</h3>
+          <marquee behavior="scroll" direction="right">            
+              <p>Scroll down for previously posted blogs >>></p>
+          </marquee>
           
             {% for post in posts %}
             <div class="panel panel-primary">
