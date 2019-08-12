@@ -6,6 +6,14 @@ from flask_login import LoginManager
 from flask_uploads import UploadSet,configure_uploads,IMAGES
 from flask_mail import Mail
 from flask_simplemde import SimpleMDE
+from config import DevConfig
+
+# Initializing application
+app = Flask(__name__,instance_relative_config = True)
+
+# Setting up configuration
+app.config.from_object(DevConfig)
+app.config.from_pyfile('config.py')
 
 
 
