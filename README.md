@@ -13,7 +13,7 @@ The Blog web application is meant for users to create blogs by signing up, be ab
 
 A user can select any of the categories from the navbar to view the blogs on these categories
 
-##User Stories
+##  User Stories
 1. As a user one can create blogs after sign up and sign in.
 2. As a user one can view, updtate and comment on blog posts
 3. As a user one can be alerted when a new post is made by joining a subscription.
@@ -23,7 +23,7 @@ A user can select any of the categories from the navbar to view the blogs on the
 7. As a writer one can update or delete blogs they have created.
 
 
-## # Behavior Driven Development
+##  Behavior Driven Development
 <table>
     <tr>
       <th>Behavior</th> 
@@ -99,7 +99,7 @@ This web application requires the following software tools to operate
 * Html
 
 ## Prepare environment variables
-export DATABASE_URL='postgresql+psycopg2://username:password@localhost/pitch'
+export DATABASE_URL='postgresql+psycopg2://username:password@localhost/blog'
 
 export SECRET_KEY='Your secret key'
 
