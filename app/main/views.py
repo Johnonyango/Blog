@@ -10,7 +10,7 @@ from .. email import mail_message
 @main.route('/')
 def index():
   
-  title = 'Home - Welcome to Blog Post'
+  title = 'Home - Welcome to Jiggy-Blogs'
   posts = Post.get_posts()
 
   return render_template('index.html', title = title, posts = posts)
@@ -109,7 +109,7 @@ def subscribe():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome To Blog post","email/sub",user.email,user=user)
+        mail_message("Welcome To Jiggy-Blogs","email/sub",user.email,user=user)
 
         return redirect(url_for('.index'))
     title = "New Subscription"
