@@ -1,6 +1,6 @@
 h1 {
     color: green;
-    font-family: 'Beth Ellen', cursive;
+    font-size: 35;
 }
 
 .landpage{
@@ -10,12 +10,8 @@ h1 {
     bottom: 0;
     height: 100%;
 
-}
-body{
-    color: green;
-}
-.jiggy{
-    background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg")
 
 }
-
+ #p{
+     font-size: 40px;
+ }

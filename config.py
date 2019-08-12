@@ -2,6 +2,7 @@ import os
 
 class Config:
    # simple mde  configurations
+   QUOTE_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
    SIMPLEMDE_JS_IIFE = True
    SIMPLEMDE_USE_CDN = True
    SECRET_KEY = os.environ.get('SECRET_KEY')
