@@ -1,4 +1,4 @@
-# [Pitch]
+# [blog]
 
 ## By John Onyango
 
