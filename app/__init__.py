@@ -13,7 +13,7 @@ app = Flask(__name__,instance_relative_config = True)
 
 # Setting up configuration
 app.config.from_object(DevConfig)
-app.config.from_pyfile('config.py')
+# app.config.from_pyfile('config.py')
 
 
 
@@ -47,6 +47,7 @@ def create_app(config_name):
    from .main import main as main_blueprint
    app.register_blueprint(main_blueprint)
 
+    #SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 
    from .auth import auth as auth_blueprint
