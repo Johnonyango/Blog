@@ -3,8 +3,8 @@ h1 {
     font-size: 35;
 }
 
-.landpage{
-    background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg")
+body{
+    background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg");
 }
 .panel-footer:hover .overlay {
     bottom: 0;
