@@ -31,13 +31,13 @@
                     <nav class="navbar navbar-default" role="navigation" style="text-align:center;">
             
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <h2 class="nav-link dropdown-toggle" style="    font-family: 'Lobster', cursive; color: green;
+                        <h2 class="nav-link dropdown-toggle" style="    font-family: 'Lobster', cursive; color: green; background-color: black;
                         " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
                                 Click to Choose Category
                         </h2>
                         <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                <ul class="nav navbar-nav navbar-right">
+                                <ul>
                                 <li style="padding-right:150px; color:green;"><a href="https://www.scorebig.com/home/top-50-sports-blogs">Sports</a></li>
                                 <li style="padding-right:150px; color:green;"><a href="https://www.healthline.com/health/best-healthy-living-blogs#1">Health</a></li>
                                 <li style="padding-right:150px; color:green;"><a href="https://blog.hubspot.com/marketing/education-blogs-you-should-follow-teach-com-list">Education</a></li>
@@ -74,7 +74,7 @@
                             </div>
                           
                             {% else %}
-                            <div class="panel-footer"><a class="btn btn-primary text-center" href="{{url_for('main.view_post', id=post.id)}}">View Comments</a></div>
+                            <div class="panel-footer"><a class="btn btn-success text-center" style="font-family: 'Beth Ellen', cursive;" href="{{url_for('main.view_post', id=post.id)}}">View Comments</a></div>
                             {%endif%}
                         </div>
                         {% endfor %}
