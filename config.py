@@ -6,7 +6,7 @@ class Config:
    SIMPLEMDE_JS_IIFE = True
    SIMPLEMDE_USE_CDN = True
    SECRET_KEY = os.environ.get('SECRET_KEY')
-   SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:12345@localhost/blog'
+   SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:12345@localhost/ojigy'
    UPLOADED_PHOTOS_DEST = 'app/static/photos'
    MAIL_SERVER = 'smtp.googlemail.com'
 # email configuration
@@ -28,11 +28,11 @@ class ProdConfig(Config):
     
 
 class TestConfig(Config):
-    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringaschool:12345@localhost/blog'
+   # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringaschool:12345@localhost/ojigy'
     pass
 
 class DevConfig(Config):
-    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:12345@localhost/blog'
+    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:12345@localhost/ojigy'
     DEBUG = True
 
 config_options = {
