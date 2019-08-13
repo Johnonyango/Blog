@@ -1,3 +1,0 @@
-Hello {{user}}
-
-Lookout for new post blog posts in Blog
