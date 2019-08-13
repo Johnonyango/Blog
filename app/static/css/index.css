@@ -3,11 +3,11 @@ h1 {
     font-size: 35;
 }
 
-body{
+/* body{
     background-image: url("https://image.shutterstock.com/image-photo/sea-beach-soft-wave-blue-260nw-744596323.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 .panel-footer:hover .overlay {
     bottom: 0;
     height: 100%;
